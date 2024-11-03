@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Panel</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Control Panel</h1>
+        
+        <!-- Add Category aa -->
+        <div class="category-form">
+            <h2>Add Category</h2>
+            <input type="text" id="category-name" placeholder="Category Name">
+            <button id="add-category">Add Category</button>
+        </div>
+
+        <!-- Delete Category -->
+        <div class="delete-category">
+            <h2>Delete Category</h2>
+            <input type="text" id="delete-category-name" placeholder="Category Name">
+            <button id="delete-category">Delete Category</button>
+        </div>
+
+        <!-- Add Product -->
+        <div class="product-form">
+            <h2>Add Product</h2>
+            <select id="product-category"></select>
+            <input type="text" id="product-title" placeholder="Product Title">
+            <input type="number" id="product-price" placeholder="Product Price">
+            <input type="number" id="product-stock" placeholder="Product Stock">
+            <input type="text" id="product-image" placeholder="Image URL">
+            <input type="text" id="product-link" placeholder="Product Link">
+            <button id="add-product">Add Product</button>
+        </div>
+
+        <!-- Edit Product -->
+        <div class="edit-product">
+            <h2>Edit Product</h2>
+            <select id="product-select"></select>
+            <input type="text" id="edit-product-title" placeholder="New Title">
+            <input type="number" id="edit-product-price" placeholder="New Price">
+            <input type="number" id="edit-product-stock" placeholder="New Stock">
+            <input type="text" id="edit-product-image" placeholder="New Image URL">
+            <input type="text" id="edit-product-link" placeholder="New Product Link">
+            <button id="edit-product">Update Product</button>
+        </div>
+    </div>
+</body>
+</html>
